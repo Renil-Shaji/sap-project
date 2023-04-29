@@ -14,7 +14,7 @@ function SideFrame() {
   return (
     <div className="main-container">
       <div className="side-frame">
-          <Profile name="super admin name" id="#20345" />
+          <Profile name="Super Admin Name" id="#20345" />
         <div className="flow-panel">
           {flow_panel.map((btn) => {
             return (

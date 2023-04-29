@@ -7,7 +7,7 @@ function RecentBadge(props)
     <div className="recent-badge-container">
       <div className="recent-badge-flex">
         <p className="admin-frame-heading-recent">Recently Issued Badge</p>
-        <p>(21st March 2023)</p>
+        <p className="recent-date">(21st March 2023)</p>
       </div>
       <div className="recent-badge-flex-2">
         <FontAwesomeIcon  icon={faIdBadge} className="recent-badge"/>

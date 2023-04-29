@@ -22,127 +22,14 @@
   font-family: 'SF-Pro-Display-Bold';
   src: url('../public/Fonts/SF-Pro-Display-Bold.otf');
 }
+/*----------------------------------LEFT FRAME CONTENTS------------------------------------*/
+.admin-circle
+{
+  font-size: 100px;
+}
 .faded-text
 {
   color: #979797;
-}
-.admin-frame-heading
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:35px;
-  margin:3px;
-}
-.admin-info-frame-sub-heading
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:20px;
-  padding-top: 25px;
-  padding-left: 2px;
-}
-.admin-info-frame-det
-{
-  font-family: SF-Pro-Display-Regular;
-  font-size:17px;
-  margin:3px;
-}
-.right-frame-info
-{
-  font-family: SF-Pro-Display-Regular;
-  font-size:10px
-}
-.admin-frame-heading-badge
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:35px;
-  margin:3px;
-  padding-left:12px;
-}
-.single-highlight-badge
-{
-  font-family: SF-Pro-Display-Bold;
-  position: relative;
-  font-size: 45px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-}
-.single-highlight-sideline-badge
-{
-  font-family: SF-Pro-Display-Semibold;
-  font-size: 20px;
-  position: relative;
-  padding-top: 42px;
-}
-.admin-frame-heading-participants
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:30px;
-  margin:3px;
-}
-.single-highlight-participants
-{
-  font-family: SF-Pro-Display-Bold;
-  position: relative;
-  font-size: 40px;
-  padding-bottom: 20px;
-  padding-left: 3px;
-}
-.single-highlight-sideline-participants
-{
-  font-family: SF-Pro-Display-Semibold;
-  font-size: 18px;
-  position: relative;
-  padding-top: 40px;
-}
-.admin-frame-heading-recent
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:35px;
-  margin:2px;
-}
-.admin-frame-sub-heading-recent
-{
-  font-family: SF-Pro-Display-Semibold;
-  font-size:20px;
-  padding-left: 2px;
-}
-.admin-frame-sideline-recent
-{
-  font-family: SF-Pro-Display-Regular;
-  font-size:16px;
-  padding-top: 5.5px;
-  padding-left: 3px;
-}
-.admin-frame-heading-worked
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:30px;
-  margin:3px;
-}
-.single-highlight-worked
-{
-  font-family: SF-Pro-Display-Semibold;
-  font-size: 45px;
-  padding-bottom: 20px;
-  padding-left: 3px;
-}
-.admin-frame-heading-courses
-{
-  font-family: SF-Pro-Display-Bold;
-  font-size:30px;
-  margin:3px;
-}
-.single-highlight-sideline-courses
-{
-  font-family: SF-Pro-Display-Semibold;
-  font-size: 18px;
-  position: relative;
-  padding-top: 20px;
-}
-.recent-badge
-{
-  position: relative;
-  padding-top: 20px;
-  font-size: 5rem;
 }
 .flow-icons
 {
@@ -217,16 +104,78 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap:2rem;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   background: #ffffff;
   height: 100vh;
   width: 230px;
 }
+/*-----------------------------------RIGHT FRAME CONTENTS-----------------------------------*/
+/*---------------INFO ADMIN CONTAINER-------------*/
+
+/*--------------FONTS AND ICONS-------------*/
+.profile-circle
+{
+  position: relative;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.white-circle
+{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: white;
+}
+.user-circle
+{
+  font-size: 150px;
+}
+.admin-frame-heading
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:35px;
+  margin:3px;
+}
+.admin-info-frame-sub-heading
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:20px;
+  padding-top: 25px;
+  padding-left: 2px;
+}
+.admin-info-frame-det
+{
+  font-family: SF-Pro-Display-Regular;
+  font-size:17px;
+  margin:3px;
+}
+.right-frame-info
+{
+  font-family: SF-Pro-Display-Regular;
+  font-size:10px
+}
+.admin-frame-heading-badge
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:35px;
+  margin:3px;
+  padding-left:12px;
+}
+/*--------------CONTENTS--------------------*/
 .info{
   text-align: center;
   display: flex;
   flex-direction:row;
   gap:400px;
+}
+.info-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left:5px;
 }
 .local-admin-profile
 {
@@ -235,12 +184,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
-.info-container
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left:5px;
-}
 .admin-info-container
 {
   font-family: SF-Pro-Display-Bold;
@@ -248,11 +191,31 @@
   padding: 50px;
   margin: 40px;
   display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
   flex-direction: column;
   background: linear-gradient(90deg, rgba(208, 182, 163, 0.51) 101.44%, rgba(232, 232, 232, 0) 101.45%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
+/*-------------------TOTAL BADGES CONTAINER----------------*/
+/*---------------ICONS AND FONTS--------------*/
+.single-highlight-badge
+{
+  font-family: SF-Pro-Display-Bold;
+  position: relative;
+  font-size: 45px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+.single-highlight-sideline-badge
+{
+  font-family: SF-Pro-Display-Semibold;
+  font-size: 20px;
+  position: relative;
+  padding-top: 42px;
+}
+/*---------------CONTENTS---------------------*/
 .total-badges-grid
 {
   display: flex;
@@ -263,6 +226,8 @@
   font-family: SF-Pro-Display-Bold;
   padding: 20px;
   padding-top: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   height: 160px;
   margin: 40px;
   display: flex;
@@ -271,6 +236,34 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
+/*-------------------RECENT BADGE CONTAINER-----------------*/
+/*------------ICONS AND FONTS-------------*/
+.recent-badge
+{
+  position: relative;
+  padding-top: 20px;
+  font-size: 5rem;
+}
+.admin-frame-heading-recent
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:35px;
+  margin:2px;
+}
+.admin-frame-sub-heading-recent
+{
+  font-family: SF-Pro-Display-Semibold;
+  font-size:20px;
+  padding-left: 2px;
+}
+.admin-frame-sideline-recent
+{
+  font-family: SF-Pro-Display-Regular;
+  font-size:16px;
+  padding-top: 5.5px;
+  padding-left: 3px;
+}
+/*------------CONTENTS--------------------*/
 .recent-badge-flex
 {
   display: flex;
@@ -291,6 +284,8 @@
   font-family: SF-Pro-Display-Bold;
   height: 145px;
   padding: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -298,6 +293,30 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
+/*----------------TOTAL PARTICIPANTS CONTAINER----------------*/
+/*---------------ICONS ANF FONTS---------------*/
+.admin-frame-heading-participants
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:30px;
+  margin:3px;
+}
+.single-highlight-participants
+{
+  font-family: SF-Pro-Display-Bold;
+  position: relative;
+  font-size: 40px;
+  padding-bottom: 20px;
+  padding-left: 3px;
+}
+.single-highlight-sideline-participants
+{
+  font-family: SF-Pro-Display-Semibold;
+  font-size: 18px;
+  position: relative;
+  padding-top: 40px;
+}
+/*---------------CONTENTS----------------------*/
 .participants-grid
 {
   display: flex;
@@ -308,16 +327,36 @@
   font-family: SF-Pro-Display-Bold;
   height: 130.37px;
   padding: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 40px;
   background: linear-gradient(90deg, rgba(208, 182, 163, 0.51) 101.44%, rgba(232, 232, 232, 0) 101.45%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
+/*---------------------LAST WORKED CONTAINER-----------------*/
+/*--------------ICONS AND FONTS----------------*/
+.admin-frame-heading-worked
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size:30px;
+  margin:3px;
+}
+.single-highlight-worked
+{
+  font-family: SF-Pro-Display-Semibold;
+  font-size: 45px;
+  padding-bottom: 20px;
+  padding-left: 3px;
+}
+/*--------------CONTENTS-----------------------*/
 .last-worked-container
 {
   font-family: SF-Pro-Display-Bold;
   height: 130.37px;
   padding: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   margin: 40px;
@@ -325,30 +364,208 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
-.courses-container-grid
+/*---------------------ALL COURSES CONTAINER-----------------*/
+/*---------------FONTS AND ICONS----------------*/
+.admin-frame-heading-courses
 {
   font-family: SF-Pro-Display-Bold;
-  padding: 30px;
+  font-size:30px;
+  margin:3px;
+}
+.single-highlight-sideline-courses
+{
+  font-family: SF-Pro-Display-Regular;
+  font-size: 18px;
+  flex-basis: 20px;
+  position: relative;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+/*---------------CONTENT------------------------*/
+.courses-container-flex
+{
+  font-family: SF-Pro-Display-Bold;
   height: 160.37px;
-  margin: 40px;
+  display: flex;
+  gap:200px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .courses-container
 {
   font-family: SF-Pro-Display-Bold;
   padding: 30px;
-  height: 160.37px;
+  height: 200.37px;
   margin: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background: linear-gradient(90deg, rgba(208, 182, 163, 0.51) 101.44%, rgba(232, 232, 232, 0) 101.45%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }
-.right-grid-container
+.all-courses
 {
-  display: grid;
-  grid-template-columns:1.9fr 3.2fr;
-  grid-template-rows: 1fr 1fr ;
+  display: flex;
+  gap:2rem;
+}
+/*-------------------SINGLE COURSE CONTAINER---------------*/
+/*-----------------ICONS AND FONTS------------------*/
+.book-open
+{
+  font-size: 60px;
+  padding-left: 56px;
+}
+.course-heading
+{
+  font-family: SF-Pro-Display-Bold;
+  font-size: 20px;
+  text-align: center;
+}
+/*-----------------CONTENT--------------------------*/
+.course-container
+{
+  width: 180px;
+  height: 160px;
+  background: #FAF4F0;
+  padding-top: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+@media (width>=1417px ) {
+    .right-grid-container
+  {
+    display: grid;
+    grid-template-columns:1.9fr 3.2fr;
+    grid-template-rows: 1fr 1fr ;
+  }
+}
+@media (width<939px)
+{
+  /* .info-container
+  {
+    display: none;
+  }
+  .admin-info-container
+  {
+    justify-content: center;
+  }
+  .recent-badge-flex-2
+  {
+    display: none;
+  } */
+  .total-badges-grid
+  {
+    display: grid;
+  }
+  .admin-info-container
+  {
+    height: 870px;
+  }
+  .info-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .total-badges-container
+  {
+    height:300px;
+  }
+  .recent-badge-container
+  {
+    height: 460px;
+  }
+  .recent-badge-flex
+  {
+    display: grid;
+  }
+  .recent-badge-flex-2
+  {
+    display: grid;
+  }
+  .participants-present-container{
+    height:250px;
+  }
+  .last-worked-container{
+    height:350px;
+  }
+  .participants-grid
+  {
+    display: grid;
+  }
+  .profile-circle
+  {
+    display: none;
+  }
+  .local-admin-profile
+  {
+    height: 80px;
+  }
+}
+@media (height<559px)
+{
+  .side-frame
+  {
+    display: none;
+  }
+  .profile-circle
+  {
+    display: none;
+  }
+  .local-admin-profile
+  {
+    height: 80px;
+  }
+}
+@media (width<703px) {
+  .side-frame
+  {
+    display: none;
+  }
+  /*
+  .total-badges-grid
+  {
+    display:none;
+  }
+  .recent-date
+  {
+    display: none;
+  }
+  .participants-grid
+  {
+    display: none;
+  }
+  .single-highlight-worked
+  {
+    display: none;
+  }
+  .single-highlight-sideline-courses
+  {
+    display: none;
+  }
+  .all-courses
+  {
+    display: none;
+  }
+  .total-badges-container
+  {
+    justify-content: center;
+  }
+  .recent-badge-container
+  {
+    justify-content: center;
+  }
+  .participants-present-container
+  {
+    justify-content: center;
+  }
+  .last-worked-container{
+    justify-content: center;
+  }
+  .courses-container{
+    justify-content: center;
+  } */
+  
 }
 .right-frame-container
 {
@@ -364,8 +581,16 @@
   flex:1;
   overflow-y: scroll;
 }
+/*-------------------------------------MAIN CONTAINER------------------------------------*/
 .main-container
 {
   display: flex;
   gap:2rem;
+}
+button:hover
+{
+  cursor: pointer;
+}
+.course-container:hover{
+  cursor: pointer;
 }
